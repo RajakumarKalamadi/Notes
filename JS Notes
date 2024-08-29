@@ -7,6 +7,12 @@ In software engineering anythig that we have can be mapped to blueprint or visio
 Classes are blueprint on a set of real life entities.
 Classes are going to represent how an entity should look and behave. When I say how do they look, I refer to the properties they posses. And when I say how they behave then I mean what actions can be performed on them.
 
+Let's Take an example:
+Consider a product class, inside this product class what do you think should be the properties of a product? What is a Property ? Propertry is just any feauture that the product can contain.
+> Name -> Name of the product
+> Price -> price of the product
+> Company -> Company of the product belongs to
+
 
 Object 
 
