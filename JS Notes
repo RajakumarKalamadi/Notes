@@ -1,1 +1,14 @@
+Object Orientred Programming language
+
+In software engineering anythig that we have can be mapped to blueprint or vision. For example, in Amazon, every product has similar struture, we can generalise this make sure we don't repeat anything again and again
+
+"Classes"
+
+Classes are blueprint on a set of real life entities.
+Classes are going to represent how an entity should look and behave. When I say how do they look, I refer to the properties they posses. And when I say how they behave then I mean what actions can be performed on them.
+
+
+Object 
+
+Using classes the fonal entity that will develop is called as a object.
 
