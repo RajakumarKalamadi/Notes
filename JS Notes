@@ -32,3 +32,5 @@ IN MOST OF THE CASES THID REFERS TO CALL SITE.
 
 Call site can be an object, or a position or may be even the new keyword. it refers to the entity which is calling this keyword.
 
+"Exception"
+It has an exception, this keyword will not refer to the call site if used inside an arrow function.
