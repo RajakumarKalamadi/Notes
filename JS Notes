@@ -32,5 +32,57 @@ IN MOST OF THE CASES THID REFERS TO CALL SITE.
 
 Call site can be an object, or a position or may be even the new keyword. it refers to the entity which is calling this keyword.
 
+let obj = {
+    x : 10,
+    y : 20,
+    z : {
+        x : 10,
+        fn : function(){
+            return [this.x, this.y];
+        }
+    }
+}
+
+let obj = {
+    x : 10,
+    y : 20,
+    fn : function(){
+        return [this.x, this.y];
+    }
+}
+
+console.log(obj.fn());
+
+
+console.log(obj.z.fn());
+
 "Exception"
 It has an exception, this keyword will not refer to the call site if used inside an arrow function.
+
+let obj = {
+    x : 10,
+    y : 20,
+    fn : function(){
+        const arrow = ()=>{
+            return [this.x, this.y];
+        }
+        return arrow();
+
+    }
+}
+
+console.log(obj.fn());
+
+
+In this code this is present inside the arrow function, hence we will resolve it lexically.
+
+1) is this defined in the scope of arrow function ? No
+2) we go one scope up, i.e inside function fn.
+3) is this defined inside fn ? Yes because fn function is normal function we have a defination of this inside it which is the call site.
+4) who is the call site ? obj object is responsible to trigger function fn so call site is obj.
+5) hence this refers to obj object and when we call arrow fucntion we get output 10, 20
+
+
+That means, when we make a new object using new keyword then new keyword creats a plain object and this plain objects is the call site for the construtor hence, this keyword refers to the plain object altogether.
+
+
