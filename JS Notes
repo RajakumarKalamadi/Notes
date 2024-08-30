@@ -18,3 +18,17 @@ Object
 
 Using classes the fonal entity that will develop is called as a object.
 
+
+
+"This keyword of JS"
+
+> this in JS works very differently then other language.
+> this is a keyword is available to be acessed in any function or even outside any function and in classes as well.
+> if we can use this keyword anywhere, then what is the value stored inside this ?
+
+IN MOST OF THE CASES THID REFERS TO CALL SITE.
+
+  Ahhh! What is a call site ?
+
+Call site can be an object, or a position or may be even the new keyword. it refers to the entity which is calling this keyword.
+
