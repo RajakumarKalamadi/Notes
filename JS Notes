@@ -19,6 +19,8 @@ Object
 Using classes the fonal entity that will develop is called as a object.
 
 
+"How new Works" ?
+
 
 "This keyword of JS"
 
@@ -85,4 +87,31 @@ In this code this is present inside the arrow function, hence we will resolve it
 
 That means, when we make a new object using new keyword then new keyword creats a plain object and this plain objects is the call site for the construtor hence, this keyword refers to the plain object altogether.
 
+Problems with current class implementation 
 
+  
+
+In the current implementation, we don't add any security on the updating of the values of the data members in the class. 
+
+After object creation, anyone can come up and update the object the object of our class without any issue. 
+
+This violates a fundamental principle of OOPs, called as Encapsulation. It says that, classes are a bundle of implementation of themselves. In any case we should not require to modify the data members of a class outside the class. Why, because then our data members will be allocated any random value without any issue. 
+
+To resolve this, we can hide  out data members from being accessed outside the class. How ? 
+
+In JS, we can make our data members private I.e. the data members will be accessible for read and write only inside the class. 
+
+To make a data member private, we just prepend # before it's declaration 
+
+ 
+
+
+ 
+
+ 
+
+Here, name price description model are private they cannot be accessed outside of the class 
+
+  
+
+ 
