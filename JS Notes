@@ -112,6 +112,55 @@ To make a data member private, we just prepend # before it's declaration
 
 Here, name price description model are private they cannot be accessed outside of the class 
 
-  
+
+
+
+
+"Builder Design Pattern"
+
+Assume we have a class like this:
+
+class product{
+    #name;
+    #price;
+    #description;
+    #model
+
+    constructor(productName, productPrice, productDescription, productModel....){
+        this.#name = productName;
+        this.#price = productPrice;
+        this.#description = productDescription;
+        this.#model = productModel;
+        .....
+    }
+}
+
+We have a big problem here that, the constructor has too many param and when calling the constructor we have to remeber which param are going to have which value in the right sequence.
+
+To avoid this we can use the defualt construtor and instead of using new constructor to allocate values we can use getter setters.
+
+
+class Product_2{
+    #name;
+    #price;
+    #category;
+    ...
+
+
+    get name(){}
+    set name(name){}
+    get price(){}
+    set price(price){}
+    get category()
+    set category(category){}
+}
+
+If we use this approch then we cannot apply validation to the object before it's creation. Due to any reson if we want a senario where due to some validation not being fulfilled we have to stop the creation 
+of object then it is not possible here, because to use getter setter we have to first create the object and then only we can get or set the value.
+
+
+
+
+
 
  
